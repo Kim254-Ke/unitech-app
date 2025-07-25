@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/studentDetailsCard"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_weight="1"
+        android:layout_margin="8dp"
+        android:padding="16dp"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@color/baby_blue"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp">
+        <TextView
+            android:id="@+id/studentName"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:text=""
+            android:textSize="18sp"/>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

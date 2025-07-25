@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"/>
+
+    <item
+        android:id="@+id/exam_mgt"
+        android:title="Exam Mgt"
+        android:icon="@drawable/baseline_grading_24"/>
+
+<item
+    android:id="@+id/announcements"
+    android:title="Announcements"
+    android:icon="@drawable/baseline_announcement_24"/>
+
+<item
+    android:id="@+id/ai_resources"
+    android:title="AI Resources"
+    android:icon="@drawable/baseline_diamond_24"/>
+
+<item
+    android:id="@+id/nav_settings"
+    android:title="Settings"
+    android:icon="@drawable/baseline_settings_24"/>
+
+<item android:title="Profile ">
+    <menu>
+        <item
+            android:id="@+id/nav_account"
+            android:title="My Account"
+            android:icon="@drawable/baseline_account_circle_24"/>
+    </menu>
+</item>
+
+<item android:title="Check out">
+    <menu>
+        <item
+            android:id="@+id/rate_us"
+            android:title="Rate us"
+            android:icon="@drawable/baseline_rate_review_24"/>
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout"
+            android:icon="@drawable/baseline_logout_24"/>
+    </menu>
+</item>
+
+</menu>

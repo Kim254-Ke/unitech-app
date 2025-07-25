@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "124411650914",
+    "project_id": "university-exam-mgt-system",
+    "storage_bucket": "university-exam-mgt-system.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124411650914:android:e077715c0b1e8e6445023b",
+        "android_client_info": {
+          "package_name": "com.example.unitech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124411650914-1diik129uqv565enk4ehfobahlk0ge9j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.unitech",
+            "certificate_hash": "1ed9e56723b42e14c7f3e63b7a071b63768b0ba9"
+          }
+        },
+        {
+          "client_id": "124411650914-t4vuejofoenri4mntbpjcon925tlk7jv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFvDtKcfqf3OxpSyIpAOI0HzIYiWS5epA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "124411650914-t4vuejofoenri4mntbpjcon925tlk7jv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

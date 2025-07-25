@@ -1,0 +1,31 @@
+# =========================
+# Firebase Config Files
+# =========================
+app/google-services.json
+app/university-exam-mgt-system-firebase-adminsdk-unl9n-dbfc95eb0a.json
+
+# =========================
+# Local Properties (machine-specific)
+# =========================
+local.properties
+app/local.properties
+
+# =========================
+# Build Output
+# =========================
+/build/
+/app/build/
+.gradle/
+
+# =========================
+# IDE Files (Android Studio / IntelliJ)
+# =========================
+.idea/
+*.iml
+
+# =========================
+# Miscellaneous
+# macOS and system files
+.DS_Store
+Thumbs.db
+

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">UniTech</string>
+    <!-- to toggle the open-close button of the navigation drawer -->
+    <string name="nav_drawer_open">Open</string>
+    <string name="nav_drawer_close">Close</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign Up</string>
+    <string name="resend_verification_email">Resend Verification Email</string>
+    <string name="enter_your_answer_here">Enter Your Answer here</string>
+    <string name="finish_and_submit">Finish and Submit</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="student">Student</string>
+    <string name="lecturer">Lecturer</string>
+    <string name="administrator">Administrator</string>
+    <string name="login">Login</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="write_a_question">Write a Question</string>
+    <string name="enter_your_question_here">Enter your question here…</string>
+    <string name="marks_awarded">Marks Awarded</string>
+    <string name="enter_marks">Enter marks</string>
+    <string name="submit">Submit</string>
+    <string name="questionnumber">QuestionNumber</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="calendar">Calendar</string>
+    <string name="announcements">Announcements</string>
+    <string name="forums_discussions">forums/ discussions</string>
+    <string name="messages">messages</string>
+    <string name="exam_mgt">Exam Mgt</string>
+    <string name="grades">Grades</string>
+    <string name="payments">Payments</string>
+    <string name="save">save</string>
+
+    <string-array name="planets_array">
+        <item>Main campus</item>
+        <item>Branch</item>
+    </string-array>
+
+</resources>

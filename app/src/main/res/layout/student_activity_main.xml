@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/student_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="@color/cream">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/student_grid"
+        android:padding="16dp"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false">
+
+        <!-- Card for Courses -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/baby_blue"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="16dp"
+                android:layout_columnWeight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:text="@string/dashboard"
+                    android:padding="16dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"/>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Card for Calendar -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/baby_blue"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="16dp"
+                android:layout_columnWeight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:text="@string/calendar"
+                    android:padding="16dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"/>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Card for Announcements -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/baby_blue"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="16dp"
+                android:layout_columnWeight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:text="@string/announcements"
+                    android:padding="16dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/baby_blue"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="16dp"
+                android:layout_columnWeight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:text="@string/forums_discussions"
+                    android:padding="16dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:ellipsize="end"
+                    android:maxLines="2"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/baby_blue"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="16dp"
+                android:layout_columnWeight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:text="@string/messages"
+                    android:padding="16dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_exam_management"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/baby_blue"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="16dp"
+                android:layout_columnWeight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:text="@string/exam_mgt"
+                    android:padding="16dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:ellipsize="end"
+                    android:maxLines="2"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_grades"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/baby_blue"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="16dp"
+                android:layout_columnWeight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:text="@string/grades"
+                    android:padding="16dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Payments"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/baby_blue"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="16dp"
+                android:layout_columnWeight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:text="@string/payments"
+                    android:padding="16dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"/>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </GridLayout>
+
+        <CalendarView
+            android:id = "@+id/Calendar"
+            android:layout_below = "@+id/student_grid"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="19dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/baby_blue">
+
+        </CalendarView>
+
+    </RelativeLayout>
+
+    <!-- Rest of the DrawerLayout Code -->
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/school_portal_navigation_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

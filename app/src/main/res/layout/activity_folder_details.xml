@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:columnCount="2"
+    android:orientation="horizontal"
+    android:alignmentMode="alignMargins"
+    android:background="@color/cream">
+    <!--android:background="@drawable/sea2"-->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_exam_questions"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="@color/baby_blue"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="16dp"
+        android:layout_columnWeight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:text="Set Exam Questions and answers "
+            android:padding="16dp"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_Student_Answers"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="@color/baby_blue"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="16dp"
+        android:layout_columnWeight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:text="Student Answers and Marked answers"
+            android:padding="16dp"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+    </androidx.cardview.widget.CardView>
+
+</GridLayout>
