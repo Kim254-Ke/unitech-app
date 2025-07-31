@@ -9,6 +9,7 @@ plugins {
     id("kotlinx-serialization")
 }
 
+// Below is meant for loading local.properties
 val localProperties = Properties()
 val localPropertiesFile = rootProject.file("local.properties")
 if (localPropertiesFile.exists()) {
@@ -16,6 +17,14 @@ if (localPropertiesFile.exists()) {
 }
 
 val apiKey = localProperties.getProperty("OPENAI_API_KEY") ?: ""
+
+// Below is meant for loading keystore.properties
+val keystoreProperties = Properties().apply {
+    val keystoreFile = rootProject.file("local.properties")
+    if (keystoreFile.exists()) {
+        load(FileInputStream(keystoreFile))
+    }
+}
 
 android {
     namespace = "com.example.unitech"
@@ -36,9 +45,20 @@ android {
         }
     }
 
+    signingConfigs {
+        create("release") {
+            storeFile = file("C:/Users/USER/keys/unitech.keystore")
+            storePassword = keystoreProperties["storePassword"] as String
+            keyAlias = "unitechkey"
+            keyPassword = keystoreProperties["keyPassword"] as String
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
+            isShrinkResources = false
+            signingConfig = signingConfigs.getByName("release")
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
